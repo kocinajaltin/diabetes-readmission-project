@@ -11,7 +11,7 @@ The workflow integrates:
 - 💊 Medication and lab information  
 - 🤖 Machine Learning (XGBoost)  
 - 🗄️ MySQL database integration  
-- 📊 Power BI visualizations  
+- 📊 Power BI visualisations  
 
 ---
 
@@ -79,14 +79,14 @@ model = xgb.XGBClassifier(
 ```
 
 - 5-fold cross-validation (accuracy, precision, recall)
-- Feature importance visualization (top predictors)
+- Feature importance visualisation (top predictors)
 - Export predictions and probabilities to MySQL
 
 ---
 
 ### 4️⃣ Export to MySQL
 
-Predictions are stored for Power BI visualization:
+Predictions are stored for Power BI visualisation:
 
 | encounter_id | patient_nbr | ml_prediction | prediction_probability | readmitted | age | gender |
 |---------------|--------------|----------------|------------------------|-------------|------|--------|
@@ -164,7 +164,7 @@ Table view filtered by **Top N (20)** highest predicted probabilities.
 | Data Storage | MySQL |
 | Data Processing | Python (pandas, SQLAlchemy) |
 | ML | XGBoost, scikit-learn |
-| Visualization | Power BI |
+| visualisation | Power BI |
 | Version Control | Git + GitHub |
 
 ---
