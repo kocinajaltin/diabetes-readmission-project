@@ -31,9 +31,7 @@ powerbi/
  └── diabetes_readmission_dashboard.pbix
 images/
  ├── dashboard_overview.png
- ├── patient_probability_chart.png
- ├── histogram_distribution.png
- └── top20_highrisk_patients.png
+
 ```
 
 ---
@@ -71,6 +69,7 @@ Key transformations in the notebook:
 Model: **XGBoostClassifier**
 
 ```python
+example --------
 model = xgb.XGBClassifier(
     objective="binary:logistic",
     eval_metric="logloss",
@@ -90,7 +89,7 @@ Predictions are stored for Power BI visualisation:
 
 | encounter_id | patient_nbr | ml_prediction | prediction_probability | readmitted | age | gender |
 |---------------|--------------|----------------|------------------------|-------------|------|--------|
-| 100001 | 50983 | 1 | 0.83 | <30 | 65–70 | Male |
+| ... | ... | ... | ... | ... | ... | ... |
 
 ---
 
@@ -117,21 +116,21 @@ Scatter plot of each encounter’s predicted probability:
 - **Tooltip:** readmitted, age, gender  
 - **Colour:** shows actual vs. predicted outcome  
 
-![Patient Probability Chart](images/patient_probability_chart.png)
+
 
 ---
 
 ### 🔹 C. Histogram of Prediction Distribution  
 Visualises the spread of prediction probabilities.  
 
-![Histogram Distribution](images/histogram_distribution.png)
+
 
 ---
 
 ### 🔹 D. Top 20 Highest Risk Patients  
 Table view filtered by **Top N (20)** highest predicted probabilities.  
 
-![Top 20 High Risk Patients](images/top20_highrisk_patients.png)
+
 
 ---
 
@@ -139,10 +138,10 @@ Table view filtered by **Top N (20)** highest predicted probabilities.
 
 | Metric | Value |
 |--------|--------|
-| Accuracy | 0.86 |
-| Precision | 0.79 |
-| Recall | 0.73 |
-| F1 Score | 0.76 |
+| Accuracy | ... |
+| Precision | ... |
+| Recall | ... |
+| F1 Score | ... |
 
 *(values will update as model improves)*
 
