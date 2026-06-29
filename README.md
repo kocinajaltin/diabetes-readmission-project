@@ -3,7 +3,7 @@
 ## 📘 Overview
 
 Hospital readmissions are a critical healthcare metric that can indicate quality of care and patient outcomes.  
-This project uses de-identified **diabetic patient encounter data** to build a **machine learning model** that predicts whether a patient is likely to be readmitted within 30 days.
+This project uses de-identified **diabetic patient encounter data** to build a **machine learning model** that predicts whether a patient is likely to be readmitted within 30 days. From this Data source **https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008**
 
 The workflow integrates:
 
